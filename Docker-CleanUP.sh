@@ -13,3 +13,7 @@ if [ -z "$var" ];
   else docker container rm $(docker container ls -aq);
 fi
 echo "done"
+# Path
+pwd
+# Report free disk space
+df -h
