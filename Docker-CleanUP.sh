@@ -8,6 +8,7 @@ docker volume prune -f
 docker image prune -af
 # Variable that will contain docker list.
 var=$(docker container ls -aq)
+# -z  Check if the value is NULL
 if [ -z "$var" ];
   then echo "Null";
   else docker container rm $(docker container ls -aq);
